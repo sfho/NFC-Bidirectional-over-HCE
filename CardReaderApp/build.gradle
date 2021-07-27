@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 19
-    buildToolsVersion '19.1.0'
+    compileSdkVersion 30
+    buildToolsVersion '30.0.2'
 
     defaultConfig {
         applicationId "edu.dce.nfc.cardreader"
         minSdkVersion 19
-        targetSdkVersion 19
+        targetSdkVersion 30
         versionCode 1
         versionName "1.0"
     }
@@ -19,6 +19,6 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile project(':libHCE')
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation project(':libHCE')
 }

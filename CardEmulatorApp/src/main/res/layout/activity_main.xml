@@ -11,6 +11,17 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:text="@string/hello_world"
+        android:id="@+id/hello"
+        />
+
+    <EditText
+        android:id="@+id/textInput"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="text"
+        android:inputType="text"
+        android:layout_below="@id/hello"
+        />
 
 </RelativeLayout>
